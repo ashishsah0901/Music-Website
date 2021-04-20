@@ -3,17 +3,20 @@
     padding: 0;
 }
 
-body {
-    background: url('contact_background.jpg') no-repeat left top/cover;
-    height: 100vh;
-    width: 100%;
+html {
     overflow: hidden;
 }
-#logo{
 
+body {
+    background: url('contact_background.jpg') no-repeat center center;
+    height: 100vh;
+    width: 100%;
+}
+
+#logo {
     background-size: cover;
     background-repeat: no-repeat;
-	font-family: cursive;
+    font-family: cursive;
     font-weight: bold;
     color: #fff;
     font-size: 1.8em;
@@ -22,6 +25,7 @@ body {
     margin-left: 4em;
     font-family: cursive;
 }
+
 .navBar {
     height: 12vh;
     /* background-color: red; */
@@ -57,12 +61,13 @@ body {
 
 .container h1 {
     font-size: 3.0vw;
-    font-family:'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
     display: inline-block;
-    margin: 8vh 0;
+    margin-top: 8vh;
 }
-.container h1:hover{
-    color:rgb(241, 6, 124)
+
+.container h1:hover {
+    color: rgb(241, 6, 124)
 }
 
 .box {
@@ -121,7 +126,33 @@ body {
 }
 
 .btn:hover {
-    color:white;
+    color: white;
     background: pink;
     font-size: 1.3vw;
+}
+
+@media(max-width: 700px) {
+    body {
+        background: url('contact_background.jpg') no-repeat center center;
+    }
+    .container {
+        width: 60%;
+        position: absolute;
+        top: 14%;
+        left: 16%;
+    }
+    .container h1 {
+        font-size: 20px;
+    }
+    .box input {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .btn-div {
+        flex-direction: column;
+    }
+    .btn {
+        width: 80px;
+        font-size: 10px;
+    }
 }
