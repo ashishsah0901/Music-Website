@@ -78,7 +78,7 @@ body {
 }
 
 .box input {
-    background: none;
+    background: transparent;
     outline: none;
     color: white;
     border-style: none;
@@ -96,6 +96,15 @@ body {
     text-align: center;
     color: white;
     margin-right: 0.4vw;
+}
+
+.box p {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    color: red;
+    font-size: 12px;
 }
 
 .btn-div {

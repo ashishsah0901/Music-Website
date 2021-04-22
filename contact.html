@@ -21,38 +21,34 @@
         <div class="box">
             <i class="fa fa-user"></i>
             <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            <p id="nameerror">Enter a valid name. (Only Alphabets and length less than 20)</p>
         </div>
         <div class="box">
             <i class="fa fa-envelope"></i>
             <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            <p id="emailerror">Enter a valid email.</p>
         </div>
         <div class="box">
             <i class="fa fa-phone"></i>
             <input type="phone" name="phone" id="phone" placeholder="Enter Your Phone Number">
+            <p id="phoneerror">Enter a valid phone number without country-code</p>
         </div>
         <div class="box">
             <i class="fa fa-key"></i>
             <input type="password" name="password" id="password" placeholder="Create Your Password">
+            <p id="passworderror">Enter a valid password. (_,@,$,&,0-9 and Alphabets are only allowed and length greater than 8 and less tha 20)</p>
         </div>
         <div class="box">
             <i class="fa fa-key"></i>
             <input type="password" name="password" id="confirmPassword" placeholder="Confirm Your Password">
+            <p id="confirmerror">Please write the same password</p>
         </div>
         <div class="btn-div">
-            <button id="SIGNUPBUTTON" class="btn" type="submit" value="submit">SignUp</button>
-            <button id="LOGINBUTTON" class="btn"><a href="signin.html">Login</button>
+            <button id="SIGNUPBUTTON" class="btn" type="submit" value="submit"><a href="signin.html">SignUp</a></button>
+            <button id="LOGINBUTTON" class="btn"><a href="signin.html">Login</a></button>
         </div>
     </div>
-    <script>
-        const signup = document.getElementById('SIGNUPBUTTON');
-        const login = document.getElementById('LOGINBUTTON');
-        signup.addEventListener('click', () => {
-            window.location.replace('signin.html')
-        });
-        login.addEventListener('click', () => {
-            window.location.replace('signin.html')
-        })
-    </script>
+    <script src="contact.js"></script>
 </body>
 
 </html>
